@@ -1,0 +1,65 @@
+my desktop credentials    |
+                          |
+username : a-logesh.e     |
+password : Zxcvbn!@#678   |
+--------------------------|                          
+GreyHr                    |
+                          |
+username : AA01357        |
+passWord : Logesh@1518    |
+
+https://aaratech.greythr.com/v3/portal/ess/home
+--------------------------|--------|
+Mail credentials   SA              |
+                                   |
+logesh.ezhumalai@aaratech.com      |
+#L0Ge(5)                           |
+-----------------------------------|
+Microsoft SQL server               |
+                                   |
+DB : 10.10.210.216                 |
+login name : SA                    |
+passWord : Qwerty123456            |
+                                   |
+-----------------------------------|
+LMS                                |
+                                   |
+username : a-bala                  |
+passWord : P@ssw0rd                |
+-----------------------------------|
+help desk mail                     | 
+                                   |
+itsupport@aaratech.com             |
+ithelpdesk@aaratech.com            |                                   |
+-----------------------------------|
+MySQL                              |
+                                   |
+user name:root                     |
+PWD:Asdfgh123456                   |
+-----------------------------------|
+MongoDB                            |
+                                   |
+usename:SA                         |
+Host:localhost                     |
+PWD:Qwerty123456                   |
+-----------------------------------|----------------|
+LMS_STP                                             |
+                                                    |
+https://at-ch-app7.aaratech.ad/svn/UAT/LoansNewLOS  |
+Username- LMSUser                                   |
+Password -ApO12PTYQ]4Q                              |
+----------------------------------------------------|
+HR mails                                            | 
+                                                    |
+Kalaivani.Shanmugam@aaratech.com                    |
+kirthiga.kannan@aaratech.com                        |
+----------------------------------------------------|-----------------------
+Dynamic screen Generation                                                  |
+                                                                           |
+https://at-internal-ap3.aaratech.com/dynamic-screen-generation/dsg/launch  |
+                                                                           |
+ --------------------------------------------------------------------------|
+
+
+
+

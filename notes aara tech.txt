@@ -1,0 +1,7 @@
+VisionPLUS -- is a suite of software modules, primarily used by banks and financial 
+               institutions, for managing credit card, debit card, prepaid card, 
+               and loan products. 
+card pac -- Product Approval Committee (PAC) This committee is a key decision-making body 
+            within a bank, tasked with evaluating and approving new or revised banking 
+             products, including various card types (credit cards, debit cards, purchasing
+              cards, etc.).

@@ -1,0 +1,101 @@
+LMS --> leasing mamagement system
+LOS --> Loan Orientation System
+DSG --> Dynamic Screen generation.
+
+STP --> straight through processing
+   stp is used to maintain all API 's.
+SVN --> apache subversion
+     Version Control System (VCS)
+
+Shift+alt+f  --> align
+
+
+
+MAP AND MULTIVALUED
+Authentcation
+Authorization
+API Authentication in spirng boot
+API
+STP-->  Straight-through processing
+thymleaf
+th --> jsfragment
+foreach vs for
+$ vs #
+text vs value
+Stream API
+bean utils
+Stream Api
+
+mvc --> model view controller
+        model --> data object
+        view --> responsible for user interface
+        controller --> business logic *received request from clients handle and return response 
+
+
+
+@Repository
+   main purpose of the @Repository annotation is to interact with a database
+   is used to indicate that the class is a Data Access Object(DAO) or repository
+@Query
+@Modifying
+@Transaction
+@Query
+@Param
+@ResponseBody 
+    instruct Spring to bypass the view resolution process and write the method's 
+     return value directly to the HTTP response body.
+@RequestBody
+@Controller 
+     responsible for handling web requests
+          method-level annotations like @GetMapping, @PostMapping, @PutMapping, and @DeleteMapping
+
+   
+    
+
+@component -->*Spring Boot takes care of creating and managing instances of that 
+               class within the application context
+    
+@Entity --> javaclasses to Table
+@ID --> specify primaryID
+@GeneratedValue --> automatic ID generation.
+@Table(name = "table_name")  --> If the database table name differs from the class name,
+@autowired --> to create a object and maintain
+
+Bean --> bean refers to an object that is managed by the Spring Framework's 
+         Inversion of Control (IoC) container.
+         
+
+
+
+Spring Dependencies  --> spring MVC --> provide web applications *handling HTTP requests, managing web resources
+ provides integration features such as multipart file upload functionality and the 
+ initialization of the IoC container using Servlet listeners and a web-oriented application 
+ context.
+
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
+--------------------               --------- ----
+SpringBoot config            hostname or Ip   portnum
+property
+
+--> inbetween we put a dot notation its refer to path or hierarchy
+
+spring.jpa.hibernate.ddl-auto=update  --> allows Hibernate to update the database schema automatically.
+spring.jpa.show-sql=true     -->   enables SQL logging for debugging.
+
+JpaRepository: 
+      Provides all the necessary CRUD operations like save(), findAll(), findById(), and deleteById() without needing to write them yourself.
+@Repository: 
+      Marks this interface as a Spring repository.
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+} 
+Employee --> refer to object
+Long --> refer to primary key like ID
+
+
+ 
+rest template 
+ one Api output go to another API input
+ 
+ 

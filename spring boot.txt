@@ -1,0 +1,16 @@
+Spring boot
+--> combination of spring framework + embeded http servlet  - xml configuration
+--> no need to xml configuration.
+--> we use Spring Tool Suite or spring initializer.
+
+
+why spring boot
+--> dependency injection
+--> avoid xml configuration.
+
+Prerequisite of Spring Boot
+--> java 1.8
+--> maven 3.0
+--> spring framework 5.0.0 build snapshot
+--> An IDE (Spring Tool Suite) 
+

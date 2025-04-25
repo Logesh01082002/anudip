@@ -1,0 +1,32 @@
+LOS > 
+ -->  leasing-ar (1)
+           # LeasingArService!Application --> project start this class
+ -->  leasing-ar-constants (23)
+          * centralized configurations  --> all constant variables are declared in this class.
+               #AssetManagementConstants
+               #BillingConstants
+               #ClearingConstants
+               #ClosureConstants
+               #ContractConstants
+               #DepreciationConstants
+               #InsurancePaymentDataEntryConstants
+               #InsuranceRenewalConstants
+               #ManageInsuranceConstants
+               #ManualWaiveoffTermChargeConstants
+               #MonthEndWHTReportConstants
+               #PayInConstants
+               #PaymentDataEntryAddAndDeleteConstants
+               #PaymentDataEntryEnum
+               #PaymentOAConstants
+               #PaymentPostingAndMaintainceContants
+               #PdcDataEntryConstants
+               #PdcReportConstants
+               #ReceiveInputVATConstants
+               #SendToOAPaymentConstants
+               #SuspensePaymentEntryConstants
+               #VoucherConstants
+               #WhtConstants
+
+ -->  leasing-ar-controller (61)
+          * handling http request
+          
