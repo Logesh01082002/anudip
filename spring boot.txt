@@ -14,3 +14,292 @@ Prerequisite of Spring Boot
 --> spring framework 5.0.0 build snapshot
 --> An IDE (Spring Tool Suite) 
 
+
+LMS --> leasing mamagement system
+LOS --> Loan Orientation System
+DSG --> Dynamic Screen generation.
+
+STP --> straight through processing
+   stp is used to maintain all API 's.
+SVN --> apache subversion
+     Version Control System (VCS)
+
+Shift+alt+f  --> align
+
+
+
+MAP AND MULTIVALUED
+Authentcation
+Authorization
+API Authentication in spirng boot
+API
+STP-->  Straight-through processing
+thymleaf
+th --> jsfragment
+foreach vs for
+$ vs #
+text vs value
+Stream API
+bean utils
+Stream Api
+
+mvc --> model view controller
+        model --> data object
+        view --> responsible for user interface
+        controller --> business logic *received request from clients handle and return response 
+
+
+
+@Repository
+   main purpose of the @Repository annotation is to interact with a database
+   is used to indicate that the class is a Data Access Object(DAO) or repository
+@Query
+@Modifying
+@Transaction
+@Query
+@Param
+@ResponseBody 
+    instruct Spring to bypass the view resolution process and write the method's 
+     return value directly to the HTTP response body.
+@RequestBody
+@Controller 
+     responsible for handling web requests
+          method-level annotations like @GetMapping, @PostMapping, @PutMapping, and @DeleteMapping
+
+   
+    
+
+@component -->*Spring Boot takes care of creating and managing instances of that 
+               class within the application context
+    
+@Entity --> javaclasses to Table
+@ID --> specify primaryID
+@GeneratedValue --> automatic ID generation.
+@Table(name = "table_name")  --> If the database table name differs from the class name,
+@autowired --> to create a object and maintain
+
+Bean --> bean refers to an object that is managed by the Spring Framework's 
+         Inversion of Control (IoC) container.
+         
+
+
+
+Spring Dependencies  --> spring MVC --> provide web applications *handling HTTP requests, managing web resources
+ provides integration features such as multipart file upload functionality and the 
+ initialization of the IoC container using Servlet listeners and a web-oriented application 
+ context.
+
+spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name
+--------------------               --------- ----
+SpringBoot config            hostname or Ip   portnum
+property
+
+--> inbetween we put a dot notation its refer to path or hierarchy
+
+spring.jpa.hibernate.ddl-auto=update  --> allows Hibernate to update the database schema automatically.
+spring.jpa.show-sql=true     -->   enables SQL logging for debugging.
+
+JpaRepository: 
+      Provides all the necessary CRUD operations like save(), findAll(), findById(), and deleteById() without needing to write them yourself.
+@Repository: 
+      Marks this interface as a Spring repository.
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+} 
+Employee --> refer to object
+Long --> refer to primary key like ID
+
+
+ 
+rest template 
+ one Api output go to another API input
+ 
+ 
+
+
+
+
+
+
+apache 
+apachi poi
+
+
+maven 
+  ->  gives default project structure
+  ->  dependencies auto download 
+  -> auto compile
+  -> server starting stoping
+
+  artifact id=
+  group id=
+
+  tymleaf --> server side java template engine for both web and standalone environment.\    
+
+  jpa --> 
+  configuration list --> \  \   
+  application context
+
+  @component 
+  --> is  used to create a object in spring container
+
+  @component("abc")   --> @qualifier("abc")
+
+  getbean 
+    --> is used to rerieve the object in spring container.
+
+singleton class
+  --> spring is create only one object in spring container.
+
+  singleton scope
+  -->  by default singleton scope.
+  --> we can create only one object.
+  --> so only one time constructor calling.
+
+  prototype scope
+  --> explicitly we  can change the secope by using @scope (value="prototype")
+
+springApplication.run(...)
+--> setup default configuration.
+--> starts spring application context
+--> class path scan
+--> starts tomcat server,stop
+
+@Autowiring
+@Qualifier 
+ is used to call component whenever we create a component name we call component with the help of Qualifier
+
+servlet
+--> server component
+
+#static request  --> already present
+#dynamic request  -->  not present already 
+
+Webcontainer 
+--> present in server
+--> all servlet are present webcontainer
+--> servlet --> java file 
+            --< runs on server side
+
+web.xml
+--> dynamic request --> to call currestponding java file
+
+servlet mapping --> is used to decide with path response done
+
+httprequest --> server --> web container --> servlets -- web.xml
+
+deployment descriptor - web.xml
+
+OUT.PRINTLN();
+sysout 
+
+
+jsp -> Java server pages
+
+ spring mvc 
+   model view controller 
+eas,flexible,separation of concense,
+
+dispatcher servlet or frontcontroller 
+--> used to decide the request where to send.response where to send.
+
+handler mapping 
+--> is nothing but annotations.
+
+/signup   /login --> is a view
+
+@controller 
+
+whenever we want to display the jsp file controller is important because 
+  controller is responsible for  this.
+
+white label error
+
+@Requestmapping  --> view name (/index)
+  is present in @controller 
+  --> inside parameter we mension whih file has to run.
+
+@responseBody 
+   is present in @controller
+   --> which is printing inside body that is present in responsebody
+
+--> we want to redirect the view files we add one dependency tomcat jasper 
+    -- goto pom.xml
+    -- add dependency
+    -- if remove response body
+    -- check tomcat server version in jar files not version
+   -- download jasper same version 
+--.> jasper is used to indicate normal string into path or file.
+
+application properties:
+
+key = value pair
+
+name = veera
+age = 23
+
+key can't be duplicate
+value can be duplicate
+
+separation of concense
+-->  in @request mapping return we can't able to mention extension like index.jsp
+      its against seperation of consense
+
+--> suppose multiple files in same name like index that time we use application roperties
+   src/main/resource/application properties 
+     * Spring.mvc.view.prefix=/admin/
+       spring.mvc.view.suffix=.jsp
+
+ https://www.bing.com/search?q=java&form=SWAUA2
+                            q=key    java =value
+
+in spring how done cliet data
+
+httpservletrequest and response 
+
+why use jsp
+  --> provide template 
+  --> we can write java code in html page
+
+httpsession 
+--> security
+--> traffic
+--> avoid multiple one userid in multiple mesdage like hotstar login.
+--> to remember all request 
+
+ ex html --> ${username}
+          java --> session.setAttribute ("username',s);
+                   return "index";
+${username}   --> jstl 
+
+@RequestParam("uname")  
+why use ?
+  in html we use name variable in java We use UName both naming convention are diff
+    but you want to enter same name is manditory to avoid this we use @requestParam 
+    to mention html name and we set any other name in java.
+  @RequestParam("uname") this provide input to java 
+
+   --> suppose we need ultiple inputs that time multiple requestParameter is need 
+        to avoid these we use ModelAndview class 
+   --> moddelAndView mav=new modelAndview();
+       mav.addObject("username",login);
+       mav.setViewName("index");
+       return mav;
+
+
+how to cnnect DB using spring boot
+H2 databse
+JPA --> java persistance API
+        --> use to connect DB
+
+
+  
+
+   --> are we pass object request
+
+
+
+
+
+
